@@ -319,7 +319,7 @@ const fastify = Fastify({
 });
 
 fastify.register(cors, {
-  origin: ["http://localhost:5173", "http://localhost:3000", "http://localhost:5000", "https://certifypro.vsgrps.com", "https://certify-vsgrps.onrender.com"],
+  origin: true,
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: [
